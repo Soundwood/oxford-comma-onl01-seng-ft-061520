@@ -6,12 +6,12 @@ def oxford_comma(array)
   else
     count = array.size
     array_index = 1
-    array_conc = "#{array[0]}, "
+    array_conc = "#{array[0]}"
     while array_index != (count - 1)
       array_conc << ", #{array[array_index]}"
       array_index += 1
       return array_conc
     end
-    array_conc << " and #{array.count - 1}"
+    array_conc << " and #{array[count - 1]}"
   end
 end
