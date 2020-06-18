@@ -10,7 +10,6 @@ def oxford_comma(array)
     while array_index != (count - 1)
       array_conc << ", #{array[array_index]}"
       array_index += 1
-      return array_conc
     end
     array_conc << " and #{array[(count - 1)]}"
   end
