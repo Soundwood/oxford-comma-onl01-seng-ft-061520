@@ -6,7 +6,7 @@ def oxford_comma(array)
   else
     count = array.size
     array_index = 0
-    array_conc = "#{array[0]"
+    array_conc = "#{array[0]}, "
     while array_index != (count - 1)
       array_conc << ", #{array[array_index]}"
       array_index += 1
