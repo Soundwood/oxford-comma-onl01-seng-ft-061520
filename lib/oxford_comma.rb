@@ -11,6 +11,6 @@ def oxford_comma(array)
       array_conc << ", #{array[array_index]}"
       array_index += 1
     end
-    array_conc << " and #{array[(count - 1)]}"
+    array_conc << ", and #{array[(count - 1)]}"
   end
 end
