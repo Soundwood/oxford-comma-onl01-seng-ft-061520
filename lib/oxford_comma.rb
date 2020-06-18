@@ -4,6 +4,14 @@ def oxford_comma(array)
   elsif array.size == 2
     array.join(" and ")
   else
-    array.join(", ")
+    count = array.size
+    array_index = 1
+    array_conc = ""
+    while array_index != (count - 1)
+      array_conc << ", #{array[array_index]}"
+      array_index += 1
+      return array_conc
+    end
+    array_conc << " and #{array.count - 1}"
   end
 end
